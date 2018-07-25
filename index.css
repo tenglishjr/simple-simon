@@ -1,0 +1,97 @@
+:root {
+    --yellow: #d2d600;
+    --yellow-clicked: #fbff00;
+    --green: #168500;
+    --green-clicked: #1fc300;
+    --blue: #2e32b8;
+    --blue-clicked: #3743ff;
+    --red: #a90000;
+    --red-clicked: #ff0000;
+}
+
+.main-title {
+    font-size: 32px;
+    text-align: center;
+    padding-right: 8px;
+}
+
+.ss-symbol{
+    font-size: 46px;
+}
+
+.button-container {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 50%;
+    background-image: url('./black-pattern.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.button {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    box-shadow: 6px 5px 9px #1d1d1d;
+    margin: 33px;
+    position: absolute;
+}
+
+.button-green {
+    top: 0;
+    left: 0;
+    background: var(--green);
+    border-top-left-radius: 100%;
+}
+.button-red {
+    top: 0;
+    right: 0;
+    background: var(--red);
+    border-top-right-radius: 100%;
+}
+.button-blue {
+    bottom: 0;
+    left: 0;
+    background: var(--blue);
+    border-bottom-left-radius: 100%;
+}
+.button-yellow {
+    bottom: 0;
+    right: 0;
+    background: var(--yellow);
+    border-bottom-right-radius: 100%;
+}
+
+.red-clicked {
+    background: var(--red-clicked);
+    box-shadow: 0 0 75px var(--red-clicked);
+}
+.blue-clicked {
+    background: var(--blue-clicked);
+    box-shadow: 0 0 75px var(--blue-clicked);
+}
+.green-clicked {
+    background: var(--green-clicked);
+    box-shadow: 0 0 75px var(--green-clicked);
+}
+.yellow-clicked {
+    background: var(--yellow-clicked);
+    box-shadow: 0 0 75px var(--yellow-clicked);
+}
+
+.center-area {
+    position: absolute;
+    background: orange;
+    width: 200px;
+    height: 200px;
+    top: 150px;
+    left: 150px;
+    border-radius: 50%;
+    opacity: .6;
+}
+
+.title {
+    text-align: center;
+}
