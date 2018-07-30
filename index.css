@@ -7,16 +7,18 @@
     --blue-clicked: #3743ff;
     --red: #a90000;
     --red-clicked: #ff0000;
+    --game-bg: #222222;
 }
 
-.main-title {
-    font-size: 32px;
-    text-align: center;
-    padding-right: 8px;
+
+
+body {
+    background-image: url('./img/floor-parquet-pattern-172292.jpg');
+    background-size: cover;
 }
 
-.ss-symbol{
-    font-size: 46px;
+.container {
+    margin-top: 7.5em;
 }
 
 .button-container {
@@ -25,7 +27,8 @@
     margin: 0 auto;
     margin-top: 50px;
     border-radius: 50%;
-    background-image: url('./black-pattern.jpg');
+    box-shadow: 9px 12px 14px black;
+    background-color: var(--game-bg);
     background-size: cover;
     position: relative;
 }
@@ -34,7 +37,7 @@
     height: 200px;
     width: 200px;
     display: inline-block;
-    box-shadow: 6px 5px 9px #1d1d1d;
+    box-shadow: 3px 3px 8px #000;
     margin: 33px;
     position: absolute;
 }
@@ -83,15 +86,70 @@
 
 .center-area {
     position: absolute;
-    background: orange;
+    border: 20px solid var(--game-bg);
+    background: #131313;
     width: 200px;
     height: 200px;
-    top: 150px;
-    left: 150px;
+    top: 130px;
+    left: 130px;
     border-radius: 50%;
-    opacity: .6;
 }
 
 .title {
-    text-align: center;
+    position: absolute;
+    top: -15px;
+    left: 24px;
+    color: #fff;
+    font-size: 43px;
+    font-family: "Bevan", sans-serif;
 }
+
+.score-screen {
+    position: absolute;
+    top: 108px;
+    left: 38px;
+    width: 43px;
+    height: 43px;
+    background: #000;
+    box-shadow: inset -1px -1px 3px #131313;
+}
+
+.start-btn {
+    position: absolute;
+    top: 115px;
+    left: 91px;
+    background: #ffffff;
+    box-shadow: 3px 3px 2px #000;
+    color: #131313;
+    width: 78px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: Courier, monospace;
+}
+.start-btn:hover {
+    background: #c8c8c8;
+}
+.start-btn:focus {
+    outline: 0;
+}
+.start-btn:active {
+    box-shadow: 1px 1px 2px #000;
+    transform: translateY(1px);
+}
+
+
+
+#ticker {
+    color: #a90000;
+    font-size: 32px;
+    font-family: Monaco, monospace;
+    text-align: right;
+    vertical-align: bottom;
+    display: block;
+    width: auto;
+    margin: 3px 3px 0 0;
+}
+
